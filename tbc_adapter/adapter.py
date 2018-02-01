@@ -140,8 +140,7 @@ class TBCAdapter(metaclass=TBCAdapterMeta):
         """util method for converting gateway response to dict"""
         return dict(x.split(": ") for x in raw.split("\n") if x.strip() != "")
 
-    # PROPERTIES
-
+    # PROPS
     @property
     def pem_paths(self):
         """property for returning pem formatted certificate and private key"""
