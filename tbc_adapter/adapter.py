@@ -50,7 +50,7 @@ class TBCAdapter(metaclass=TBCAdapterMeta):
     # GATEWAY API METHODS
 
     def get_transaction_id(self, amount, **kw):
-        self._trans_related_common(amount, 'a', **kw)
+        self._trans_related_common(amount, 'v', **kw)
     get_transaction_id.api_out = ("TRANSACTION_ID", )
 
     def get_transaction_status(self):
