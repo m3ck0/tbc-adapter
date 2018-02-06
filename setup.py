@@ -3,7 +3,7 @@ from setuptools import setup
 # https://python-packaging.readthedocs.io/en/latest/metadata.html
 
 setup(name="tbc_adapter",
-      version="0.1",
+      version="0.1.1",
       description="TBC payment gateway adapter",
       url="https://github.com/Jambazishvili/tbc-adapter",
       author="Giorgi (mecko) Jambazishvili",
