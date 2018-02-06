@@ -171,7 +171,9 @@ print(result)  # >>> {"RESULT": "x", "RESULT_CODE": "y"}
 
 class MyFancyAdapter(TBCAdapter):
 	#  implementations & definitions
-    commit_preauthed.api_out = ("RESULT", "RESULT_CODE", "CARD_NUMBER", "RRN", "APPROVAL_CODE")
+	pass
+
+MyFancyAdapter.commit_preauthed.api_out = ("RESULT", "RESULT_CODE", "CARD_NUMBER", "RRN", "APPROVAL_CODE")
 ```
 
 თითოეულ API მეთოდს გააჩნია api_out (list/tuple ტიპის "დესკრიპტორი"), რომელიც ერთგვარი მეტა ინფორმაციაა, რა ცვლადები უნდა დააბრუნოს ადაპტერმა უკან კონკრეტული მეთოდებისთვის. თუ `api_out` სიის მსგავს ობიექტში არსებული გასაღები ბანკიდან დაბრუნებულ პასუხში არ აღმოჩნდა, მაშინ მისი მნიშვნელობა იქნება `None`.
