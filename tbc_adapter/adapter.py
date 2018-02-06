@@ -33,7 +33,7 @@ class TBCAdapterMeta(type):
         def wrapper(*a, **kw):
             method(*a, **kw)
             get = a[0].response.get
-            return a[0].response if not get("status") else \
+            return a[0].response if not get("status", True) else \
                 {k: get(k) for k in getattr(method, "api_out", ())}
         return wrapper
 
