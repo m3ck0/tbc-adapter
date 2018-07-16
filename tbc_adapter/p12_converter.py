@@ -1,6 +1,6 @@
 from OpenSSL.crypto import (FILETYPE_PEM, dump_certificate, dump_privatekey,
                             load_pkcs12)
-
+import os
 
 def generate_pems(cert, password, out_dir, **kw):
     """
